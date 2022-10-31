@@ -1,5 +1,9 @@
 var videoTemp = document.querySelector('.video');
 
+videoTemp.addEventListener('click', e => {
+    videoTemp.play()
+})
+
 videoTemp.addEventListener('timeupdate', e => {
     displayConditional();
 })
