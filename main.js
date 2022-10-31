@@ -15,5 +15,5 @@ function displayConditional() {
 }
 
 function redirectPage() {
-    window.location.href = "/Pages/Confirm/form.html"
+    window.location.href = "/presell/form.html"
 }
