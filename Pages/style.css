@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+body {
+    padding: 30px;
+    background-attachment: fixed;
+    background-image: linear-gradient(360deg, #9F73AB 75%, #855692)
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 30px;
+    color: #3F3B6C;
+    line-height: 35px;
+    text-align: start;
+}
+
+@media (max-width: 670px)
+{
+    .container {
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.logo {
+    max-width: 119px;
+    max-height: 64px;
+    margin-bottom: 10px;
+}
+
+#amoforms_iframe_1018010 {
+    display: flex;
+}
