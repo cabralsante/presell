@@ -14,6 +14,6 @@ function displayConditional() {
     }
 }
 
-window.location.href = "../Pages/form.html"
 function redirectPage() {
+    window.location.href = "/Pages/Confirm/form.html"
 }

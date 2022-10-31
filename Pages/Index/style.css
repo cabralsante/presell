@@ -87,6 +87,12 @@ body {
     font-size: 14px;
     line-height: 107%;
     animation: breath 0.2s ease-in-out infinite alternate-reverse;
+    transition: all 0.35s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .conditional_none {
