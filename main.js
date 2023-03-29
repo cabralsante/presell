@@ -9,6 +9,7 @@ videoTemp.addEventListener('timeupdate', e => {
 })
 
 function displayConditional() {
+    console.log(videoTemp.currentTime)
     if (videoTemp.currentTime == videoTemp.duration) {
         document.querySelector(".conditional_none").classList.toggle("conditional")
     }
