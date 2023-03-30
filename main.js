@@ -1,4 +1,6 @@
+const urlParams = new URLSearchParams(window.location.search);
 var videoTemp = document.querySelector('.video');
+var url = urlParams.get('url');
 
 videoTemp.addEventListener('click', e => {
     videoTemp.play()
@@ -15,9 +17,6 @@ function displayConditional() {
         document.querySelector(".conditional_none").classList.toggle("conditional")
     }
 }
-
-const urlParams = new URLSearchParams(window.location.search);
-const url = urlParams.get('url');
 
 function redirectPage() {
     window.open(url, '_blank');
