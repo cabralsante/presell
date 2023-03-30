@@ -16,6 +16,9 @@ function displayConditional() {
     }
 }
 
+const urlParams = new URLSearchParams(window.location.search);
+const url = urlParams.get('url');
+
 function redirectPage() {
-    window.location.href = "/presell/form.html"
+    window.open(url, '_blank');
 }
