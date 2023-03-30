@@ -95,12 +95,9 @@ body {
     transform: scale(1.2);
 }
 
-.conditional_none {
-    display: none;
-}
 
 .conditional {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;

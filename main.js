@@ -1,6 +1,6 @@
-const urlParams = new URLSearchParams(window.location.search);
 var videoTemp = document.querySelector('.video');
-var url = urlParams.get('url');
+const urlParams = new URLSearchParams(window.location.search);
+const url = urlParams.get('url');
 
 videoTemp.addEventListener('click', e => {
     videoTemp.play()
@@ -13,11 +13,15 @@ videoTemp.addEventListener('timeupdate', e => {
 function displayConditional() {
     console.log(videoTemp.currentTime)
     if (videoTemp.currentTime == videoTemp.duration) {
-        console.log(videoTemp.duration)
-        document.querySelector(".conditional_none").classList.toggle("conditional")
+        document.querySelector('.conditional').style.display = "flex";
     }
 }
 
 function redirectPage() {
+    if(url == null) {
+        alert('Favor, verifique a URL e tente novamente.');
+        return;
+    }
+
     window.open(url, '_blank');
 }
